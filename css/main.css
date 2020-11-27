@@ -1,0 +1,47 @@
+.navbar-bottom__menu-2 {
+	max-width: 880px;
+	margin: 50px auto;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+}
+
+li .sprite {
+	margin-right: 6px;
+}
+
+.sprite {
+	position: relative;
+	display: block;
+	width: 34px;
+	height: 34px;
+
+}
+
+.sprite::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 34px;
+	height: 34px;
+	background: url(/img/sprite_with-hover.png) top left;
+	content: '';
+}
+
+.sprite.i-s::before {
+	background-position: -34px -1px;
+}
+
+.sprite.i-g::before {
+	background-position: -68px -1px;
+}
+
+.sprite.i-t::before {
+	background-position: -102px -1px;
+}
+
+.sprite:hover::before {
+	background-position-y: -35px;
+}
