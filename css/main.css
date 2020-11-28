@@ -2,100 +2,102 @@
 	box-sizing: border-box;
 }
 
-div {
-	border: 1px solid #000;
-}
-
 .container {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 20px 15px 0px;
+	padding: 10px;
 }
 
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -10px -5px;
-	margin-bottom: 20px;
-	padding: 5px;
+	padding: 0 5px;
 }
 
+.row:first-child {
+	padding-top: 5px;
+}
 .row:last-child {
-	margin-bottom: 10px;
+	padding-bottom: 5px;
 }
 
 .col {
 	flex: 0 1 100%;
 	width: 100%;
 	min-height: 200px;
-	margin: 5px;
+	padding: 5px;
 }
 
 .col-25 {
-	flex-basis: calc(25% - 10px);
-	min-width: calc(25% - 10px);
-	max-width: calc(25% - 10px);
+	flex-basis: 25%;
+	min-width: 25%;
+	max-width: 25%;
 }
 
 .col-33 {
-	flex-basis: calc(33.3333% - 10px);
-	min-width: calc(33.3333% - 10px);
-	max-width: calc(33.3333% - 10px);
+	flex-basis: 33.333%;
+	min-width: 33.333%;
+	max-width: 33.333%;
 }
 
 .col-50 {
-	flex-basis: calc(50% - 10px);
-	min-width: calc(50% - 10px);
-	max-width: calc(50% - 10px);
+	flex-basis: 50%;
+	min-width: 50%;
+	max-width: 50%;
 }
 
 /*---Adaptive---*/
 @media (max-width: 600px) {
 	.col-50 {
-		flex-basis: calc(100% - 10px);
-		min-width: calc(100% - 10px);
-		max-width: calc(100% - 10px);
+		flex-basis: 100%;
+		min-width: 100%;
+		max-width: 100%;
 		min-height: 50px;
 	}
-	.col-33 {
-		flex-basis: calc(50% - 10px);
-		min-width: calc(50% - 10px);
-		max-width: calc(50% - 10px);
-		min-height: 50px;
-	}
+
+	.col-33,
 	.col-25 {
-		flex-basis: calc(50% - 10px);
-		min-width: calc(50% - 10px);
-		max-width: calc(50% - 10px);
-		min-height: 100px;
+		flex-basis: 50%;
+		min-width: 50%;
+		max-width: 50%;
+		min-height: 50px;
 	}
 }
 
 @media (max-width: 400px) {
 	.col-33,
 	.col-25 {
-		flex-basis: calc(100% - 10px);
-		min-width: calc(100% - 10px);
-		max-width: calc(100% - 10px);
+		flex-basis: 100%;
+		min-width: 100%;
+		max-width: 100%;
 	}
 }
+
 /*---Adaptive---*/
 
 /*---color---*/
 .gray {
 	background-color: #4e4e4d;
 }
+
 .yellow {
 	background-color: #ffe100;
 }
+
 .lyme {
+	height: 100%;
 	background-color: #4ee408;
 }
+
 .red {
+	height: 100%;
 	background-color: #f00;
 }
+
 .pink {
+	height: 100%;
 	background-color: #e100ff;
 }
+
 /*---color---*/
